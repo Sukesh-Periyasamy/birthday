@@ -163,8 +163,8 @@ $('document').ready(function(){
 				i=i+1;
 				$("p:nth-child("+i+")").fadeIn('slow').delay(1000);
 				
-				if(i==20){
-					$("p:nth-child(19)").fadeOut('slow').promise().done(function () {
+				if(i==21){
+					$("p:nth-child(20)").fadeOut('slow').promise().done(function () {
 						$('.message').fadeOut('fast');
 						$('.cake').fadeIn('fast');
 						
