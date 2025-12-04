@@ -1334,7 +1334,7 @@
         <button class="music-btn" id="musicBtn" onclick="toggleMusic()">
             <span id="musicIcon">🔇</span>
         </button>
-        <audio id="bgMusic" loop>
+        <audio id="bgMusic" loop autoplay>
             <source src="Tum Ho Toh Saiyaara 128 Kbps.mp3" type="audio/mpeg">
         </audio>
     </div>
@@ -1359,12 +1359,21 @@
                 document.getElementById('preloader').classList.add('hidden');
                 // Auto-play music after preloader
                 setTimeout(() => {
-                    bgMusic.play().catch(e => {
-                        console.log('Audio playback failed:', e);
-                    });
-                    musicIcon.textContent = '🎵';
-                    musicBtn.classList.add('playing');
-                    isPlaying = true;
+                    // Try to play with a promise to handle autoplay restrictions
+                    const playPromise = bgMusic.play();
+                    
+                    if (playPromise !== undefined) {
+                        playPromise.then(() => {
+                            // Autoplay started successfully
+                            musicIcon.textContent = '🎵';
+                            musicBtn.classList.add('playing');
+                            isPlaying = true;
+                        }).catch(error => {
+                            // Autoplay was prevented, show arrow to prompt user
+                            console.log('Autoplay prevented:', error);
+                            musicArrow.classList.add('show');
+                        });
+                    }
                 }, 500);
             }, 3500);
         });
