@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Tina 💖 | 1 Year Together</title>
     <meta name="description" content="A special celebration of love, memories, and one beautiful year together">
-    
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -24,13 +27,13 @@
             --peachy: #FFDAB9;
             --warm-white: #FFF5F7;
             --soft-gold: #FFE5B4;
-            
+
             /* Gradients */
             --gradient-main: linear-gradient(135deg, #FFD4E5 0%, #FFC0CB 50%, #FFDAB9 100%);
             --gradient-soft: linear-gradient(120deg, #FFE5E5 0%, #FFD4E5 50%, #FFDAB9 100%);
             --gradient-hero: linear-gradient(135deg, #FFE5E5 0%, #FFD4E5 25%, #FFC0CB 50%, #FFDAB9 75%, #FFE5B4 100%);
             --gradient-button: linear-gradient(135deg, #FFB6C1 0%, #FFC0CB 100%);
-            
+
             /* Glassmorphism */
             --glass-bg: rgba(255, 255, 255, 0.18);
             --glass-border: rgba(255, 255, 255, 0.35);
@@ -184,12 +187,35 @@
             color: #FF1493;
         }
 
-        .floating-hearts span:nth-child(1) { left: 10%; animation-delay: 0s; }
-        .floating-hearts span:nth-child(2) { left: 25%; animation-delay: 0.5s; }
-        .floating-hearts span:nth-child(3) { left: 40%; animation-delay: 1s; }
-        .floating-hearts span:nth-child(4) { left: 55%; animation-delay: 1.5s; }
-        .floating-hearts span:nth-child(5) { left: 70%; animation-delay: 2s; }
-        .floating-hearts span:nth-child(6) { left: 85%; animation-delay: 2.5s; }
+        .floating-hearts span:nth-child(1) {
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-hearts span:nth-child(2) {
+            left: 25%;
+            animation-delay: 0.5s;
+        }
+
+        .floating-hearts span:nth-child(3) {
+            left: 40%;
+            animation-delay: 1s;
+        }
+
+        .floating-hearts span:nth-child(4) {
+            left: 55%;
+            animation-delay: 1.5s;
+        }
+
+        .floating-hearts span:nth-child(5) {
+            left: 70%;
+            animation-delay: 2s;
+        }
+
+        .floating-hearts span:nth-child(6) {
+            left: 85%;
+            animation-delay: 2.5s;
+        }
 
         @keyframes floatUp {
             0% {
@@ -197,9 +223,11 @@
                 opacity: 0;
                 transform: translateY(0) rotate(0deg) scale(0.5);
             }
+
             25% {
                 opacity: 1;
             }
+
             100% {
                 bottom: 100%;
                 opacity: 0;
@@ -208,15 +236,20 @@
         }
 
         @keyframes heartBeat {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: scale(1);
             }
+
             25% {
                 transform: scale(1.1);
             }
+
             50% {
                 transform: scale(1);
             }
+
             75% {
                 transform: scale(1.05);
             }
@@ -226,6 +259,7 @@
             0% {
                 height: 0;
             }
+
             100% {
                 height: 120px;
             }
@@ -236,6 +270,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -248,6 +283,7 @@
                 top: -50px;
                 opacity: 1;
             }
+
             100% {
                 top: calc(100vh - 40px);
                 opacity: 1;
@@ -283,8 +319,15 @@
         }
 
         @keyframes fadeInOut {
-            0%, 100% { opacity: 0.6; }
-            50% { opacity: 1; }
+
+            0%,
+            100% {
+                opacity: 0.6;
+            }
+
+            50% {
+                opacity: 1;
+            }
         }
 
         /* Hero Section */
@@ -303,9 +346,17 @@
         }
 
         @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .hero-content {
@@ -358,6 +409,7 @@
                 opacity: 0;
                 transform: translateY(-30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -369,6 +421,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -400,13 +453,16 @@
         }
 
         @keyframes float {
-            0%, 100% { 
-                transform: translateY(0) rotate(0deg); 
-                opacity: 0.7; 
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.7;
             }
-            50% { 
-                transform: translateY(-40px) rotate(180deg); 
-                opacity: 1; 
+
+            50% {
+                transform: translateY(-40px) rotate(180deg);
+                opacity: 1;
             }
         }
 
@@ -527,9 +583,12 @@
         }
 
         @keyframes pulse {
-            0%, 100% {
+
+            0%,
+            100% {
                 box-shadow: 0 0 25px rgba(255, 182, 193, 0.6);
             }
+
             50% {
                 box-shadow: 0 0 35px rgba(255, 182, 193, 0.9);
             }
@@ -578,9 +637,12 @@
         }
 
         @keyframes heartPulse {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: scale(1);
             }
+
             50% {
                 transform: scale(1.1);
             }
@@ -852,8 +914,13 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
 
         .scroll-top-btn {
@@ -911,9 +978,12 @@
         }
 
         @keyframes musicPulse {
-            0%, 100% {
+
+            0%,
+            100% {
                 box-shadow: 0 8px 25px rgba(255, 182, 193, 0.4);
             }
+
             50% {
                 box-shadow: 0 8px 40px rgba(255, 182, 193, 0.8);
             }
@@ -955,9 +1025,12 @@
         }
 
         @keyframes bounceArrow {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateY(0);
             }
+
             50% {
                 transform: translateY(10px);
             }
@@ -976,6 +1049,7 @@
                 transform: translateY(0) translateX(0) scale(1) rotate(0deg);
                 opacity: 1;
             }
+
             100% {
                 transform: translateY(-200px) translateX(var(--drift-x, 0)) scale(0) rotate(360deg);
                 opacity: 0;
@@ -995,6 +1069,7 @@
                 transform: translateY(0) scale(1);
                 opacity: 0.8;
             }
+
             100% {
                 transform: translateY(-120px) scale(0);
                 opacity: 0;
@@ -1064,6 +1139,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Creative Preloader -->
     <div class="preloader" id="preloader">
@@ -1100,10 +1176,12 @@
         <div class="hero-content">
             <h1>Happy Birthday, Tina 💖</h1>
             <h2>Celebrating 1 Year of Us</h2>
-            
+
             <div class="hero-card glass-card">
                 <h3>Tina</h3>
-                <p>From the moment we met, my life has been filled with more love, laughter, and happiness than I ever thought possible. You're my favorite part of every day, and I can't wait to create countless more memories with you.</p>
+                <p>From the moment we met, my life has been filled with more love, laughter, and happiness than I ever
+                    thought possible. You're my favorite part of every day, and I can't wait to create countless more
+                    memories with you.</p>
             </div>
         </div>
     </section>
@@ -1118,29 +1196,44 @@
 
             <div class="glass-card letter-main">
                 <p>
-                    My dearest Tina, on this special day that celebrates your birth, I find myself overwhelmed with gratitude—not just for who you are, but for the incredible gift of having you in my life. This past year with you has been nothing short of magical. You've transformed my world in ways I never imagined possible, filling every day with warmth, laughter, and a love so pure it takes my breath away. Your smile has become my favorite sight, your laughter my favorite sound, and your happiness my greatest mission. You've taught me what it means to truly love and be loved, to be vulnerable yet strong, to dream bigger while staying grounded. Every moment we've shared, from the grandest adventures to the quietest evenings together, has been a treasure I hold close to my heart. Thank you for being you—for your kindness, your strength, your beautiful soul, and for choosing to share this journey with me. Happy birthday, my love. Here's to celebrating you today and every day, and to the countless beautiful memories we'll create together. I love you more than words could ever express.
+                    My dearest Tina, on this special day that celebrates your birth, I find myself overwhelmed with
+                    gratitude—not just for who you are, but for the incredible gift of having you in my life. This past
+                    year with you has been nothing short of magical. You've transformed my world in ways I never
+                    imagined possible, filling every day with warmth, laughter, and a love so pure it takes my breath
+                    away. Your smile has become my favorite sight, your laughter my favorite sound, and your happiness
+                    my greatest mission. You've taught me what it means to truly love and be loved, to be vulnerable yet
+                    strong, to dream bigger while staying grounded. Every moment we've shared, from the grandest
+                    adventures to the quietest evenings together, has been a treasure I hold close to my heart. Thank
+                    you for being you—for your kindness, your strength, your beautiful soul, and for choosing to share
+                    this journey with me. Happy birthday, my love. Here's to celebrating you today and every day, and to
+                    the countless beautiful memories we'll create together. I love you more than words could ever
+                    express.
                 </p>
             </div>
 
             <div class="wishes-grid">
                 <div class="wish-card glass-card">
                     <div class="wish-heart">❤️</div>
-                    <p>Your smile lights up my darkest days and makes the brightest ones even more beautiful. Thank you for being my sunshine, my comfort, and my home.</p>
+                    <p>Your smile lights up my darkest days and makes the brightest ones even more beautiful. Thank you
+                        for being my sunshine, my comfort, and my home.</p>
                 </div>
 
                 <div class="wish-card glass-card">
                     <div class="wish-heart">💕</div>
-                    <p>I fall in love with you a little more every single day. The way you laugh, the way you care, the way you make everything better—you're absolutely perfect to me.</p>
+                    <p>I fall in love with you a little more every single day. The way you laugh, the way you care, the
+                        way you make everything better—you're absolutely perfect to me.</p>
                 </div>
 
                 <div class="wish-card glass-card">
                     <div class="wish-heart">💖</div>
-                    <p>This year with you has been the best year of my life. You've given me more happiness than I ever thought possible, and I promise to spend forever trying to give you the same.</p>
+                    <p>This year with you has been the best year of my life. You've given me more happiness than I ever
+                        thought possible, and I promise to spend forever trying to give you the same.</p>
                 </div>
 
                 <div class="wish-card glass-card">
                     <div class="wish-heart">💗</div>
-                    <p>Thank you for being my best friend, my partner, my everything. You understand me like no one else, and loving you is the easiest and most natural thing I've ever done.</p>
+                    <p>Thank you for being my best friend, my partner, my everything. You understand me like no one
+                        else, and loving you is the easiest and most natural thing I've ever done.</p>
                 </div>
             </div>
         </div>
@@ -1157,7 +1250,8 @@
             <div class="quotes-container glass-card">
                 <div class="quotes-slider" id="quotesSlider">
                     <div class="quote-card">
-                        <p>In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine.</p>
+                        <p>In all the world, there is no heart for me like yours. In all the world, there is no love for
+                            you like mine.</p>
                     </div>
 
                     <div class="quote-card">
@@ -1169,7 +1263,8 @@
                     </div>
 
                     <div class="quote-card">
-                        <p>Meeting you was fate, becoming your friend was a choice, but falling in love with you was beyond my control.</p>
+                        <p>Meeting you was fate, becoming your friend was a choice, but falling in love with you was
+                            beyond my control.</p>
                     </div>
 
                     <div class="quote-card">
@@ -1178,7 +1273,7 @@
                 </div>
 
                 <div class="slider-dots" id="sliderDots"></div>
-                
+
                 <div class="slider-arrows">
                     <button class="slider-arrow" onclick="changeSlide(-1)">‹</button>
                     <button class="slider-arrow" onclick="changeSlide(1)">›</button>
@@ -1305,13 +1400,17 @@
                 <div class="highlight-card glass-card">
                     <div class="highlight-icon">💫</div>
                     <h3>The First Time We Met</h3>
-                    <p>I still remember the nervous excitement, the instant connection, and that feeling that something special was beginning. Looking into your eyes, I knew my life was about to change in the most beautiful way possible.</p>
+                    <p>I still remember the nervous excitement, the instant connection, and that feeling that something
+                        special was beginning. Looking into your eyes, I knew my life was about to change in the most
+                        beautiful way possible.</p>
                 </div>
 
                 <div class="highlight-card glass-card">
                     <div class="highlight-icon">❤️</div>
                     <h3>My Favorite Thing About You</h3>
-                    <p>Your heart. The way you care so deeply, love so genuinely, and see beauty in everything. Your compassion, your strength, your ability to make me feel like the most important person in the world—that's what I love most.</p>
+                    <p>Your heart. The way you care so deeply, love so genuinely, and see beauty in everything. Your
+                        compassion, your strength, your ability to make me feel like the most important person in the
+                        world—that's what I love most.</p>
                 </div>
             </div>
         </div>
@@ -1322,7 +1421,10 @@
         <div class="container">
             <h2>To Many More Birthdays Together 🎂</h2>
             <p>
-                This is just the beginning of our forever, Tina. I promise to make every birthday, every anniversary, and every ordinary day extraordinary. Thank you for being you, for loving me, and for making life so incredibly beautiful. I love you more than you'll ever know, and I can't wait to celebrate countless more years with you.
+                This is just the beginning of our forever, Tina. I promise to make every birthday, every anniversary,
+                and every ordinary day extraordinary. Thank you for being you, for loving me, and for making life so
+                incredibly beautiful. I love you more than you'll ever know, and I can't wait to celebrate countless
+                more years with you.
             </p>
             <p class="signature">– Sukesh 💖</p>
             <button class="scroll-top-btn" onclick="scrollToTop()">Scroll up to relive everything again 💫</button>
@@ -1330,11 +1432,11 @@
     </section>
 
     <!-- Music Player -->
-    <div class="music-player" style="display: none;">
+    <div class="music-player">
         <button class="music-btn" id="musicBtn" onclick="toggleMusic()">
             <span id="musicIcon">🔇</span>
         </button>
-        <audio id="bgMusic" loop autoplay muted>
+        <audio id="bgMusic" loop>
             <source src="Tum Ho Toh Saiyaara 128 Kbps.mp3" type="audio/mpeg">
         </audio>
     </div>
@@ -1397,7 +1499,7 @@
             if (musicArrow) {
                 musicArrow.classList.remove('show');
             }
-            
+
             if (isPlaying) {
                 bgMusic.pause();
                 musicIcon.textContent = '🔇';
@@ -1462,10 +1564,10 @@
             particle.className = 'particle';
             particle.style.left = x + 'px';
             particle.style.top = y + 'px';
-            
+
             const driftX = (Math.random() - 0.5) * 100;
             particle.style.setProperty('--drift-x', driftX + 'px');
-            
+
             if (type === 'heart') {
                 particle.textContent = heartEmojis[Math.floor(Math.random() * heartEmojis.length)];
                 particle.style.fontSize = (Math.random() * 1.5 + 1.5) + 'rem';
@@ -1479,9 +1581,9 @@
                 particle.style.border = '2px solid rgba(255, 255, 255, 0.6)';
                 particle.style.boxShadow = '0 0 15px rgba(255, 192, 203, 0.4)';
             }
-            
+
             document.body.appendChild(particle);
-            
+
             setTimeout(() => {
                 particle.remove();
             }, 3000);
@@ -1490,7 +1592,7 @@
         // Mouse click effect - more particles
         document.addEventListener('click', (e) => {
             if (e.target.closest('.lightbox') || e.target.closest('.music-btn')) return;
-            
+
             for (let i = 0; i < 5; i++) {
                 setTimeout(() => {
                     const offsetX = (Math.random() - 0.5) * 40;
@@ -1504,7 +1606,7 @@
         // Touch effect for mobile
         document.addEventListener('touchstart', (e) => {
             if (e.target.closest('.lightbox') || e.target.closest('.music-btn')) return;
-            
+
             for (let i = 0; i < e.touches.length; i++) {
                 const touch = e.touches[i];
                 for (let j = 0; j < 3; j++) {
@@ -1524,24 +1626,24 @@
 
         window.addEventListener('scroll', () => {
             clearTimeout(scrollTimeout);
-            
+
             scrollTimeout = setTimeout(() => {
                 const scrollDiff = Math.abs(window.scrollY - lastScrollY);
-                
+
                 if (scrollDiff > 50) {
                     const numParticles = Math.min(Math.floor(scrollDiff / 100), 3);
-                    
+
                     for (let i = 0; i < numParticles; i++) {
                         setTimeout(() => {
                             const x = Math.random() * window.innerWidth;
                             const y = window.innerHeight - 50;
                             const type = Math.random() > 0.5 ? 'heart' : 'bubble';
-                            
+
                             const particle = document.createElement('div');
                             particle.className = 'scroll-particle';
                             particle.style.left = x + 'px';
                             particle.style.top = y + 'px';
-                            
+
                             if (type === 'heart') {
                                 particle.textContent = heartEmojis[Math.floor(Math.random() * heartEmojis.length)];
                                 particle.style.fontSize = (Math.random() * 1 + 1.2) + 'rem';
@@ -1554,16 +1656,16 @@
                                 particle.style.background = bubbleColors[Math.floor(Math.random() * bubbleColors.length)];
                                 particle.style.border = '1.5px solid rgba(255, 255, 255, 0.5)';
                             }
-                            
+
                             document.body.appendChild(particle);
-                            
+
                             setTimeout(() => {
                                 particle.remove();
                             }, 2000);
                         }, i * 100);
                     }
                 }
-                
+
                 lastScrollY = window.scrollY;
             }, 100);
         });
@@ -1572,7 +1674,7 @@
         let mouseMoveTimeout;
         document.addEventListener('mousemove', (e) => {
             clearTimeout(mouseMoveTimeout);
-            
+
             mouseMoveTimeout = setTimeout(() => {
                 if (Math.random() > 0.95) {
                     const type = Math.random() > 0.6 ? 'heart' : 'bubble';
@@ -1604,7 +1706,7 @@
 
         function updateSlider() {
             slider.style.transform = `translateX(-${currentSlide * 100}%)`;
-            
+
             // Update dots
             const dots = dotsContainer.querySelectorAll('.slider-dot');
             dots.forEach((dot, index) => {
@@ -1631,21 +1733,21 @@
         const fallingContainer = document.getElementById('fallingHeartsContainer');
         const heartEmojisForFalling = ['❤️', '💕', '💖', '💗', '💝', '💓', '💞'];
         const collectedHearts = [];
-        
+
         function createFallingHeart() {
             const heart = document.createElement('div');
             heart.className = 'falling-heart';
             heart.textContent = heartEmojisForFalling[Math.floor(Math.random() * heartEmojisForFalling.length)];
-            
+
             const leftPosition = Math.random() * 95;
             heart.style.left = leftPosition + '%';
             heart.style.fontSize = (Math.random() * 15 + 20) + 'px';
-            
+
             const duration = Math.random() * 2 + 3;
             heart.style.animationDuration = duration + 's';
-            
+
             fallingContainer.appendChild(heart);
-            
+
             // Keep the heart at the bottom after animation completes
             setTimeout(() => {
                 heart.style.animation = 'none';
@@ -1653,10 +1755,10 @@
                 collectedHearts.push(heart);
             }, duration * 1000);
         }
-        
+
         // Create falling hearts continuously
         setInterval(createFallingHeart, 400);
-        
+
         // Initial batch
         for (let i = 0; i < 15; i++) {
             setTimeout(createFallingHeart, i * 200);
@@ -1666,17 +1768,18 @@
         window.addEventListener('load', () => {
             const gallery = document.querySelector('.gallery');
             const items = Array.from(gallery.children);
-            
+
             // Fisher-Yates shuffle algorithm
             for (let i = items.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [items[i], items[j]] = [items[j], items[i]];
             }
-            
+
             // Clear and re-append in shuffled order
             gallery.innerHTML = '';
             items.forEach(item => gallery.appendChild(item));
         });
     </script>
 </body>
+
 </html>
