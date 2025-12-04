@@ -1346,6 +1346,13 @@
     </div>
 
     <script>
+        // Music Player variables - define first
+        const bgMusic = document.getElementById('bgMusic');
+        const musicBtn = document.getElementById('musicBtn');
+        const musicIcon = document.getElementById('musicIcon');
+        const musicArrow = document.getElementById('musicArrow');
+        let isPlaying = false;
+
         // Preloader Animation
         window.addEventListener('load', () => {
             setTimeout(() => {
@@ -1380,13 +1387,6 @@
         document.querySelectorAll('section:not(.hero), .timeline-item').forEach(el => {
             observer.observe(el);
         });
-
-        // Music Player
-        const bgMusic = document.getElementById('bgMusic');
-        const musicBtn = document.getElementById('musicBtn');
-        const musicIcon = document.getElementById('musicIcon');
-        const musicArrow = document.getElementById('musicArrow');
-        let isPlaying = false;
 
         function toggleMusic() {
             // Hide arrow when music button is clicked
