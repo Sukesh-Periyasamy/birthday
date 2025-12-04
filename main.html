@@ -1357,11 +1357,18 @@
         window.addEventListener('load', () => {
             setTimeout(() => {
                 document.getElementById('preloader').classList.add('hidden');
-                // Auto-play music after preloader (unmute after autoplay starts)
+                // Auto-play music after preloader
                 setTimeout(() => {
-                    // Unmute the audio (it starts muted to allow autoplay)
-                    bgMusic.muted = false;
-                    isPlaying = true;
+                    // Start playing and unmute
+                    bgMusic.play().then(() => {
+                        bgMusic.muted = false;
+                        isPlaying = true;
+                    }).catch(error => {
+                        console.log('Autoplay failed:', error);
+                        // If autoplay fails, try unmuting first then play
+                        bgMusic.muted = false;
+                        bgMusic.play().catch(e => console.log('Play failed:', e));
+                    });
                 }, 500);
             }, 3500);
         });
