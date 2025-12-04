@@ -184,6 +184,6 @@ $('document').ready(function(){
 
 	// Open gift - Redirect to main website
 	$('#open_gift').click(function(){
-		window.location.href = '../main.html';
+		window.location.href = 'main.html';
 	});
 });
