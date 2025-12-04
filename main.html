@@ -1350,9 +1350,14 @@
         window.addEventListener('load', () => {
             setTimeout(() => {
                 document.getElementById('preloader').classList.add('hidden');
-                // Show music arrow after preloader
+                // Auto-play music after preloader
                 setTimeout(() => {
-                    document.getElementById('musicArrow').classList.add('show');
+                    bgMusic.play().catch(e => {
+                        console.log('Audio playback failed:', e);
+                    });
+                    musicIcon.textContent = '🎵';
+                    musicBtn.classList.add('playing');
+                    isPlaying = true;
                 }, 500);
             }, 3500);
         });
