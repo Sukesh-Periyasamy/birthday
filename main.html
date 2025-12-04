@@ -1459,18 +1459,9 @@
         window.addEventListener('load', () => {
             setTimeout(() => {
                 document.getElementById('preloader').classList.add('hidden');
-                // Auto-play music after preloader
+                // Show music arrow after preloader
                 setTimeout(() => {
-                    // Start playing and unmute
-                    bgMusic.play().then(() => {
-                        bgMusic.muted = false;
-                        isPlaying = true;
-                    }).catch(error => {
-                        console.log('Autoplay failed:', error);
-                        // If autoplay fails, try unmuting first then play
-                        bgMusic.muted = false;
-                        bgMusic.play().catch(e => console.log('Play failed:', e));
-                    });
+                    musicArrow.classList.add('show');
                 }, 500);
             }, 3500);
         });
